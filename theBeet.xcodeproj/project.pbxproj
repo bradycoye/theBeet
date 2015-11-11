@@ -7,12 +7,103 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		60736FCC1BF2A37200EE6F97 /* ResponseEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60736FCB1BF2A37200EE6F97 /* ResponseEntity.swift */; settings = {ASSET_TAGS = (); }; };
+		60736FCE1BF2A46200EE6F97 /* Dummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60736FCD1BF2A46200EE6F97 /* Dummy.swift */; settings = {ASSET_TAGS = (); }; };
+		60736FD01BF2A49500EE6F97 /* ImageEntitySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60736FCF1BF2A49500EE6F97 /* ImageEntitySpec.swift */; settings = {ASSET_TAGS = (); }; };
+		60736FD21BF2A57200EE6F97 /* ResponseEntitySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60736FD11BF2A57200EE6F97 /* ResponseEntitySpec.swift */; settings = {ASSET_TAGS = (); }; };
+		60736FD41BF2A5D200EE6F97 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60736FD31BF2A5D200EE6F97 /* Networking.swift */; settings = {ASSET_TAGS = (); }; };
+		60736FD61BF2A5DD00EE6F97 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60736FD51BF2A5DD00EE6F97 /* Network.swift */; settings = {ASSET_TAGS = (); }; };
+		60736FD81BF2A71C00EE6F97 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60736FD71BF2A71C00EE6F97 /* NetworkError.swift */; settings = {ASSET_TAGS = (); }; };
+		60736FDA1BF2A75700EE6F97 /* NetworkSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60736FD91BF2A75700EE6F97 /* NetworkSpec.swift */; settings = {ASSET_TAGS = (); }; };
+		60736FDC1BF2A7C600EE6F97 /* Pixabay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60736FDB1BF2A7C600EE6F97 /* Pixabay.swift */; settings = {ASSET_TAGS = (); }; };
+		60736FDE1BF2A7EA00EE6F97 /* ImageSearching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60736FDD1BF2A7EA00EE6F97 /* ImageSearching.swift */; settings = {ASSET_TAGS = (); }; };
+		60736FE01BF2A81800EE6F97 /* ImageSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60736FDF1BF2A81800EE6F97 /* ImageSearch.swift */; settings = {ASSET_TAGS = (); }; };
+		60736FE21BF2A88D00EE6F97 /* ImageSearchSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60736FE11BF2A88D00EE6F97 /* ImageSearchSpec.swift */; settings = {ASSET_TAGS = (); }; };
+		60736FE41BF2C75800EE6F97 /* ImageSearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60736FE31BF2C75800EE6F97 /* ImageSearchTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		60736FE61BF2C7A300EE6F97 /* ImageSearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60736FE51BF2C7A300EE6F97 /* ImageSearchTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		60736FE81BF2C7CC00EE6F97 /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60736FE71BF2C7CC00EE6F97 /* main.storyboard */; settings = {ASSET_TAGS = (); }; };
+		60736FEA1BF2C99B00EE6F97 /* ImageSearchTableViewModeling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60736FE91BF2C99B00EE6F97 /* ImageSearchTableViewModeling.swift */; settings = {ASSET_TAGS = (); }; };
+		60736FEC1BF2C9B500EE6F97 /* ImageSearchTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60736FEB1BF2C9B500EE6F97 /* ImageSearchTableViewModel.swift */; settings = {ASSET_TAGS = (); }; };
+		60736FEE1BF2CA0300EE6F97 /* ImageSearchTableViewCellModeling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60736FED1BF2CA0300EE6F97 /* ImageSearchTableViewCellModeling.swift */; settings = {ASSET_TAGS = (); }; };
+		60736FF01BF2CA1300EE6F97 /* ImageSearchTableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60736FEF1BF2CA1300EE6F97 /* ImageSearchTableViewCellModel.swift */; settings = {ASSET_TAGS = (); }; };
+		60736FF21BF2CBFF00EE6F97 /* AppDelegateSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60736FF11BF2CBFF00EE6F97 /* AppDelegateSpec.swift */; settings = {ASSET_TAGS = (); }; };
+		60736FF41BF2CE9900EE6F97 /* DummyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60736FF31BF2CE9900EE6F97 /* DummyResponse.swift */; settings = {ASSET_TAGS = (); }; };
+		60736FF61BF2CEC400EE6F97 /* ImageSearchTableViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60736FF51BF2CEC400EE6F97 /* ImageSearchTableViewModelSpec.swift */; settings = {ASSET_TAGS = (); }; };
 		60E9786E1BF28A3E001BB7B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E9786D1BF28A3E001BB7B5 /* AppDelegate.swift */; };
-		60E978701BF28A3E001BB7B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E9786F1BF28A3E001BB7B5 /* ViewController.swift */; };
-		60E978731BF28A3E001BB7B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60E978711BF28A3E001BB7B5 /* Main.storyboard */; };
 		60E978751BF28A3E001BB7B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60E978741BF28A3E001BB7B5 /* Assets.xcassets */; };
 		60E978781BF28A3E001BB7B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60E978761BF28A3E001BB7B5 /* LaunchScreen.storyboard */; };
-		60E978831BF28A3E001BB7B5 /* theBeetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E978821BF28A3E001BB7B5 /* theBeetTests.swift */; };
+		60E9789C1BF28AAB001BB7B5 /* theBeetModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60E978921BF28AAB001BB7B5 /* theBeetModel.framework */; settings = {ASSET_TAGS = (); }; };
+		60E978A31BF28AAB001BB7B5 /* theBeetModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E978A21BF28AAB001BB7B5 /* theBeetModelTests.swift */; };
+		60E978A71BF28AAB001BB7B5 /* theBeetModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60E978921BF28AAB001BB7B5 /* theBeetModel.framework */; };
+		60E978A81BF28AAB001BB7B5 /* theBeetModel.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 60E978921BF28AAB001BB7B5 /* theBeetModel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		60E978BF1BF28ACE001BB7B5 /* theBeetViewModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60E978B51BF28ACE001BB7B5 /* theBeetViewModel.framework */; settings = {ASSET_TAGS = (); }; };
+		60E978CA1BF28ACE001BB7B5 /* theBeetViewModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60E978B51BF28ACE001BB7B5 /* theBeetViewModel.framework */; };
+		60E978CB1BF28ACE001BB7B5 /* theBeetViewModel.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 60E978B51BF28ACE001BB7B5 /* theBeetViewModel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		60E978E11BF28ADB001BB7B5 /* theBeetView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60E978D71BF28ADA001BB7B5 /* theBeetView.framework */; settings = {ASSET_TAGS = (); }; };
+		60E978E81BF28ADB001BB7B5 /* theBeetViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E978E71BF28ADB001BB7B5 /* theBeetViewTests.swift */; };
+		60E978EC1BF28ADB001BB7B5 /* theBeetView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60E978D71BF28ADA001BB7B5 /* theBeetView.framework */; };
+		60E978ED1BF28ADB001BB7B5 /* theBeetView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 60E978D71BF28ADA001BB7B5 /* theBeetView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		60E978F71BF28C1F001BB7B5 /* theBeetModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60E978921BF28AAB001BB7B5 /* theBeetModel.framework */; };
+		60E978FA1BF28C2B001BB7B5 /* theBeetViewModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60E978B51BF28ACE001BB7B5 /* theBeetViewModel.framework */; };
+		60E978FB1BF28CE0001BB7B5 /* theBeetModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60E978921BF28AAB001BB7B5 /* theBeetModel.framework */; };
+		60E978FC1BF28CED001BB7B5 /* theBeetViewModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60E978B51BF28ACE001BB7B5 /* theBeetViewModel.framework */; };
+		60E978FD1BF28D1D001BB7B5 /* theBeetModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60E978921BF28AAB001BB7B5 /* theBeetModel.framework */; };
+		60E978FE1BF28D21001BB7B5 /* theBeetViewModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60E978B51BF28ACE001BB7B5 /* theBeetViewModel.framework */; };
+		60E978FF1BF28D24001BB7B5 /* theBeetView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60E978D71BF28ADA001BB7B5 /* theBeetView.framework */; };
+		60E979001BF28EB1001BB7B5 /* theBeetView.h in Headers */ = {isa = PBXBuildFile; fileRef = 60E978D91BF28ADA001BB7B5 /* theBeetView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		60E979011BF28EBC001BB7B5 /* theBeetViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 60E978B71BF28ACE001BB7B5 /* theBeetViewModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		60E979021BF28EC4001BB7B5 /* theBeetModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 60E978941BF28AAB001BB7B5 /* theBeetModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		60E979061BF294CD001BB7B5 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 60E979051BF294CD001BB7B5 /* Cartfile */; settings = {ASSET_TAGS = (); }; };
+		60E9790F1BF298EF001BB7B5 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60E979081BF29894001BB7B5 /* Alamofire.framework */; };
+		60E979101BF298F2001BB7B5 /* Himotoki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60E979091BF29894001BB7B5 /* Himotoki.framework */; };
+		60E979111BF298F9001BB7B5 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60E9790C1BF29894001BB7B5 /* ReactiveCocoa.framework */; };
+		60E979121BF298FD001BB7B5 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60E9790D1BF29894001BB7B5 /* Result.framework */; };
+		60E979131BF29916001BB7B5 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60E9790C1BF29894001BB7B5 /* ReactiveCocoa.framework */; };
+		60E979141BF2991C001BB7B5 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60E9790D1BF29894001BB7B5 /* Result.framework */; };
+		60E979151BF2991F001BB7B5 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60E9790C1BF29894001BB7B5 /* ReactiveCocoa.framework */; };
+		60E979161BF29921001BB7B5 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60E9790D1BF29894001BB7B5 /* Result.framework */; };
+		60E979171BF29947001BB7B5 /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60E9790E1BF29894001BB7B5 /* Swinject.framework */; };
+		60E979181BF2996E001BB7B5 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60E9790C1BF29894001BB7B5 /* ReactiveCocoa.framework */; };
+		60E979191BF29970001BB7B5 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60E9790D1BF29894001BB7B5 /* Result.framework */; };
+		60E9791A1BF29975001BB7B5 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60E9790B1BF29894001BB7B5 /* Quick.framework */; };
+		60E9791B1BF29978001BB7B5 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60E9790A1BF29894001BB7B5 /* Nimble.framework */; };
+		60E9791C1BF2998A001BB7B5 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60E9790C1BF29894001BB7B5 /* ReactiveCocoa.framework */; };
+		60E9791D1BF2998C001BB7B5 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60E9790D1BF29894001BB7B5 /* Result.framework */; };
+		60E9791E1BF2998F001BB7B5 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60E9790B1BF29894001BB7B5 /* Quick.framework */; };
+		60E9791F1BF29992001BB7B5 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60E9790A1BF29894001BB7B5 /* Nimble.framework */; };
+		60E979201BF299A5001BB7B5 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60E9790C1BF29894001BB7B5 /* ReactiveCocoa.framework */; };
+		60E979211BF299A9001BB7B5 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60E9790D1BF29894001BB7B5 /* Result.framework */; };
+		60E979221BF299B3001BB7B5 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60E9790B1BF29894001BB7B5 /* Quick.framework */; };
+		60E979231BF299C9001BB7B5 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60E9790A1BF29894001BB7B5 /* Nimble.framework */; };
+		60E979241BF299F3001BB7B5 /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60E9790E1BF29894001BB7B5 /* Swinject.framework */; };
+		60E979251BF299F6001BB7B5 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60E9790B1BF29894001BB7B5 /* Quick.framework */; };
+		60E979261BF299F9001BB7B5 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60E9790A1BF29894001BB7B5 /* Nimble.framework */; };
+		60E9792F1BF29AE1001BB7B5 /* Alamofire.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 60E979081BF29894001BB7B5 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		60E979301BF29AE4001BB7B5 /* Himotoki.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 60E979091BF29894001BB7B5 /* Himotoki.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		60E979311BF29AE9001BB7B5 /* ReactiveCocoa.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 60E9790C1BF29894001BB7B5 /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		60E979331BF29B04001BB7B5 /* Result.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 60E9790D1BF29894001BB7B5 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		60E979341BF29B08001BB7B5 /* Quick.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 60E9790B1BF29894001BB7B5 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		60E979351BF29B0B001BB7B5 /* Nimble.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 60E9790A1BF29894001BB7B5 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		60E979371BF29B2F001BB7B5 /* Alamofire.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 60E979081BF29894001BB7B5 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		60E979381BF29B33001BB7B5 /* Himotoki.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 60E979091BF29894001BB7B5 /* Himotoki.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		60E979391BF29B36001BB7B5 /* ReactiveCocoa.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 60E9790C1BF29894001BB7B5 /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		60E9793A1BF29B39001BB7B5 /* Result.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 60E9790D1BF29894001BB7B5 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		60E9793B1BF29B3E001BB7B5 /* Quick.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 60E9790B1BF29894001BB7B5 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		60E9793D1BF29B47001BB7B5 /* Nimble.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 60E9790A1BF29894001BB7B5 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		60E9793F1BF29B63001BB7B5 /* Alamofire.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 60E979081BF29894001BB7B5 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		60E979401BF29B66001BB7B5 /* Himotoki.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 60E979091BF29894001BB7B5 /* Himotoki.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		60E979411BF29B69001BB7B5 /* ReactiveCocoa.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 60E9790C1BF29894001BB7B5 /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		60E979421BF29B73001BB7B5 /* Result.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 60E9790D1BF29894001BB7B5 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		60E979431BF29B78001BB7B5 /* Quick.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 60E9790B1BF29894001BB7B5 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		60E979441BF29B7B001BB7B5 /* Nimble.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 60E9790A1BF29894001BB7B5 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		60E979461BF29BA4001BB7B5 /* Quick.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 60E9790B1BF29894001BB7B5 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		60E979471BF29BA6001BB7B5 /* Nimble.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 60E9790A1BF29894001BB7B5 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		60E979501BF29D11001BB7B5 /* Alamofire.framework.dSYM in Copy dSYMs */ = {isa = PBXBuildFile; fileRef = 60E9794B1BF29D11001BB7B5 /* Alamofire.framework.dSYM */; };
+		60E979511BF29D11001BB7B5 /* Himotoki.framework.dSYM in Copy dSYMs */ = {isa = PBXBuildFile; fileRef = 60E9794C1BF29D11001BB7B5 /* Himotoki.framework.dSYM */; };
+		60E979521BF29D11001BB7B5 /* ReactiveCocoa.framework.dSYM in Copy dSYMs */ = {isa = PBXBuildFile; fileRef = 60E9794D1BF29D11001BB7B5 /* ReactiveCocoa.framework.dSYM */; };
+		60E979531BF29D11001BB7B5 /* Result.framework.dSYM in Copy dSYMs */ = {isa = PBXBuildFile; fileRef = 60E9794E1BF29D11001BB7B5 /* Result.framework.dSYM */; };
+		60E979541BF29D11001BB7B5 /* Swinject.framework.dSYM in Copy dSYMs */ = {isa = PBXBuildFile; fileRef = 60E9794F1BF29D11001BB7B5 /* Swinject.framework.dSYM */; };
+		60E979571BF2A1F1001BB7B5 /* ImageEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E979561BF2A1F1001BB7B5 /* ImageEntity.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,19 +114,216 @@
 			remoteGlobalIDString = 60E978691BF28A3E001BB7B5;
 			remoteInfo = theBeet;
 		};
+		60E9789D1BF28AAB001BB7B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 60E978621BF28A3E001BB7B5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 60E978911BF28AAB001BB7B5;
+			remoteInfo = theBeetModel;
+		};
+		60E978A51BF28AAB001BB7B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 60E978621BF28A3E001BB7B5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 60E978911BF28AAB001BB7B5;
+			remoteInfo = theBeetModel;
+		};
+		60E978C01BF28ACE001BB7B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 60E978621BF28A3E001BB7B5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 60E978B41BF28ACE001BB7B5;
+			remoteInfo = theBeetViewModel;
+		};
+		60E978C81BF28ACE001BB7B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 60E978621BF28A3E001BB7B5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 60E978B41BF28ACE001BB7B5;
+			remoteInfo = theBeetViewModel;
+		};
+		60E978E21BF28ADB001BB7B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 60E978621BF28A3E001BB7B5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 60E978D61BF28ADA001BB7B5;
+			remoteInfo = theBeetView;
+		};
+		60E978EA1BF28ADB001BB7B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 60E978621BF28A3E001BB7B5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 60E978D61BF28ADA001BB7B5;
+			remoteInfo = theBeetView;
+		};
+		60E978F51BF28BE0001BB7B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 60E978621BF28A3E001BB7B5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 60E978911BF28AAB001BB7B5;
+			remoteInfo = theBeetModel;
+		};
+		60E978F81BF28C26001BB7B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 60E978621BF28A3E001BB7B5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 60E978B41BF28ACE001BB7B5;
+			remoteInfo = theBeetViewModel;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		60E978AC1BF28AAB001BB7B5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				60E978ED1BF28ADB001BB7B5 /* theBeetView.framework in Embed Frameworks */,
+				60E978A81BF28AAB001BB7B5 /* theBeetModel.framework in Embed Frameworks */,
+				60E978CB1BF28ACE001BB7B5 /* theBeetViewModel.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60E9792E1BF29AD1001BB7B5 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				60E9792F1BF29AE1001BB7B5 /* Alamofire.framework in Copy Frameworks */,
+				60E979301BF29AE4001BB7B5 /* Himotoki.framework in Copy Frameworks */,
+				60E979311BF29AE9001BB7B5 /* ReactiveCocoa.framework in Copy Frameworks */,
+				60E979331BF29B04001BB7B5 /* Result.framework in Copy Frameworks */,
+				60E979341BF29B08001BB7B5 /* Quick.framework in Copy Frameworks */,
+				60E979351BF29B0B001BB7B5 /* Nimble.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60E979361BF29B13001BB7B5 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				60E979371BF29B2F001BB7B5 /* Alamofire.framework in Copy Frameworks */,
+				60E979381BF29B33001BB7B5 /* Himotoki.framework in Copy Frameworks */,
+				60E979391BF29B36001BB7B5 /* ReactiveCocoa.framework in Copy Frameworks */,
+				60E9793A1BF29B39001BB7B5 /* Result.framework in Copy Frameworks */,
+				60E9793B1BF29B3E001BB7B5 /* Quick.framework in Copy Frameworks */,
+				60E9793D1BF29B47001BB7B5 /* Nimble.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60E9793E1BF29B51001BB7B5 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				60E9793F1BF29B63001BB7B5 /* Alamofire.framework in Copy Frameworks */,
+				60E979401BF29B66001BB7B5 /* Himotoki.framework in Copy Frameworks */,
+				60E979411BF29B69001BB7B5 /* ReactiveCocoa.framework in Copy Frameworks */,
+				60E979421BF29B73001BB7B5 /* Result.framework in Copy Frameworks */,
+				60E979431BF29B78001BB7B5 /* Quick.framework in Copy Frameworks */,
+				60E979441BF29B7B001BB7B5 /* Nimble.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60E979451BF29B90001BB7B5 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				60E979461BF29BA4001BB7B5 /* Quick.framework in Copy Frameworks */,
+				60E979471BF29BA6001BB7B5 /* Nimble.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60E9794A1BF29C61001BB7B5 /* Copy dSYMs */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				60E979501BF29D11001BB7B5 /* Alamofire.framework.dSYM in Copy dSYMs */,
+				60E979511BF29D11001BB7B5 /* Himotoki.framework.dSYM in Copy dSYMs */,
+				60E979521BF29D11001BB7B5 /* ReactiveCocoa.framework.dSYM in Copy dSYMs */,
+				60E979531BF29D11001BB7B5 /* Result.framework.dSYM in Copy dSYMs */,
+				60E979541BF29D11001BB7B5 /* Swinject.framework.dSYM in Copy dSYMs */,
+			);
+			name = "Copy dSYMs";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		60736FCB1BF2A37200EE6F97 /* ResponseEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseEntity.swift; sourceTree = "<group>"; };
+		60736FCD1BF2A46200EE6F97 /* Dummy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dummy.swift; sourceTree = "<group>"; };
+		60736FCF1BF2A49500EE6F97 /* ImageEntitySpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageEntitySpec.swift; sourceTree = "<group>"; };
+		60736FD11BF2A57200EE6F97 /* ResponseEntitySpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseEntitySpec.swift; sourceTree = "<group>"; };
+		60736FD31BF2A5D200EE6F97 /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		60736FD51BF2A5DD00EE6F97 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		60736FD71BF2A71C00EE6F97 /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		60736FD91BF2A75700EE6F97 /* NetworkSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkSpec.swift; sourceTree = "<group>"; };
+		60736FDB1BF2A7C600EE6F97 /* Pixabay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pixabay.swift; sourceTree = "<group>"; };
+		60736FDD1BF2A7EA00EE6F97 /* ImageSearching.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageSearching.swift; sourceTree = "<group>"; };
+		60736FDF1BF2A81800EE6F97 /* ImageSearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageSearch.swift; sourceTree = "<group>"; };
+		60736FE11BF2A88D00EE6F97 /* ImageSearchSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageSearchSpec.swift; sourceTree = "<group>"; };
+		60736FE31BF2C75800EE6F97 /* ImageSearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageSearchTableViewController.swift; sourceTree = "<group>"; };
+		60736FE51BF2C7A300EE6F97 /* ImageSearchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageSearchTableViewCell.swift; sourceTree = "<group>"; };
+		60736FE71BF2C7CC00EE6F97 /* main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = main.storyboard; sourceTree = "<group>"; };
+		60736FE91BF2C99B00EE6F97 /* ImageSearchTableViewModeling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageSearchTableViewModeling.swift; sourceTree = "<group>"; };
+		60736FEB1BF2C9B500EE6F97 /* ImageSearchTableViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageSearchTableViewModel.swift; sourceTree = "<group>"; };
+		60736FED1BF2CA0300EE6F97 /* ImageSearchTableViewCellModeling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageSearchTableViewCellModeling.swift; sourceTree = "<group>"; };
+		60736FEF1BF2CA1300EE6F97 /* ImageSearchTableViewCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageSearchTableViewCellModel.swift; sourceTree = "<group>"; };
+		60736FF11BF2CBFF00EE6F97 /* AppDelegateSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegateSpec.swift; sourceTree = "<group>"; };
+		60736FF31BF2CE9900EE6F97 /* DummyResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DummyResponse.swift; sourceTree = "<group>"; };
+		60736FF51BF2CEC400EE6F97 /* ImageSearchTableViewModelSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageSearchTableViewModelSpec.swift; sourceTree = "<group>"; };
 		60E9786A1BF28A3E001BB7B5 /* theBeet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = theBeet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60E9786D1BF28A3E001BB7B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		60E9786F1BF28A3E001BB7B5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		60E978721BF28A3E001BB7B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		60E978741BF28A3E001BB7B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		60E978771BF28A3E001BB7B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		60E978791BF28A3E001BB7B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		60E9787E1BF28A3E001BB7B5 /* theBeetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = theBeetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		60E978821BF28A3E001BB7B5 /* theBeetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = theBeetTests.swift; sourceTree = "<group>"; };
 		60E978841BF28A3E001BB7B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60E978921BF28AAB001BB7B5 /* theBeetModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = theBeetModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		60E978941BF28AAB001BB7B5 /* theBeetModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = theBeetModel.h; sourceTree = "<group>"; };
+		60E978961BF28AAB001BB7B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60E9789B1BF28AAB001BB7B5 /* theBeetModelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = theBeetModelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		60E978A21BF28AAB001BB7B5 /* theBeetModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = theBeetModelTests.swift; sourceTree = "<group>"; };
+		60E978A41BF28AAB001BB7B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60E978B51BF28ACE001BB7B5 /* theBeetViewModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = theBeetViewModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		60E978B71BF28ACE001BB7B5 /* theBeetViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = theBeetViewModel.h; sourceTree = "<group>"; };
+		60E978B91BF28ACE001BB7B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60E978BE1BF28ACE001BB7B5 /* theBeetViewModelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = theBeetViewModelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		60E978C71BF28ACE001BB7B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60E978D71BF28ADA001BB7B5 /* theBeetView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = theBeetView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		60E978D91BF28ADA001BB7B5 /* theBeetView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = theBeetView.h; sourceTree = "<group>"; };
+		60E978DB1BF28ADA001BB7B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60E978E01BF28ADB001BB7B5 /* theBeetViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = theBeetViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		60E978E71BF28ADB001BB7B5 /* theBeetViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = theBeetViewTests.swift; sourceTree = "<group>"; };
+		60E978E91BF28ADB001BB7B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60E979051BF294CD001BB7B5 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		60E979081BF29894001BB7B5 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		60E979091BF29894001BB7B5 /* Himotoki.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Himotoki.framework; path = Carthage/Build/iOS/Himotoki.framework; sourceTree = "<group>"; };
+		60E9790A1BF29894001BB7B5 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		60E9790B1BF29894001BB7B5 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		60E9790C1BF29894001BB7B5 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
+		60E9790D1BF29894001BB7B5 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		60E9790E1BF29894001BB7B5 /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = Carthage/Build/iOS/Swinject.framework; sourceTree = "<group>"; };
+		60E9794B1BF29D11001BB7B5 /* Alamofire.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Alamofire.framework.dSYM; path = Carthage/Build/iOS/Alamofire.framework.dSYM; sourceTree = "<group>"; };
+		60E9794C1BF29D11001BB7B5 /* Himotoki.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Himotoki.framework.dSYM; path = Carthage/Build/iOS/Himotoki.framework.dSYM; sourceTree = "<group>"; };
+		60E9794D1BF29D11001BB7B5 /* ReactiveCocoa.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = ReactiveCocoa.framework.dSYM; path = Carthage/Build/iOS/ReactiveCocoa.framework.dSYM; sourceTree = "<group>"; };
+		60E9794E1BF29D11001BB7B5 /* Result.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Result.framework.dSYM; path = Carthage/Build/iOS/Result.framework.dSYM; sourceTree = "<group>"; };
+		60E9794F1BF29D11001BB7B5 /* Swinject.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Swinject.framework.dSYM; path = Carthage/Build/iOS/Swinject.framework.dSYM; sourceTree = "<group>"; };
+		60E979561BF2A1F1001BB7B5 /* ImageEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageEntity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +331,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60E978EC1BF28ADB001BB7B5 /* theBeetView.framework in Frameworks */,
+				60E978CA1BF28ACE001BB7B5 /* theBeetViewModel.framework in Frameworks */,
+				60E978A71BF28AAB001BB7B5 /* theBeetModel.framework in Frameworks */,
+				60E979171BF29947001BB7B5 /* Swinject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +342,81 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60E978FF1BF28D24001BB7B5 /* theBeetView.framework in Frameworks */,
+				60E978FE1BF28D21001BB7B5 /* theBeetViewModel.framework in Frameworks */,
+				60E978FD1BF28D1D001BB7B5 /* theBeetModel.framework in Frameworks */,
+				60E979241BF299F3001BB7B5 /* Swinject.framework in Frameworks */,
+				60E979251BF299F6001BB7B5 /* Quick.framework in Frameworks */,
+				60E979261BF299F9001BB7B5 /* Nimble.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60E9788E1BF28AAB001BB7B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60E979121BF298FD001BB7B5 /* Result.framework in Frameworks */,
+				60E9790F1BF298EF001BB7B5 /* Alamofire.framework in Frameworks */,
+				60E979101BF298F2001BB7B5 /* Himotoki.framework in Frameworks */,
+				60E979111BF298F9001BB7B5 /* ReactiveCocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60E978981BF28AAB001BB7B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60E9789C1BF28AAB001BB7B5 /* theBeetModel.framework in Frameworks */,
+				60E979181BF2996E001BB7B5 /* ReactiveCocoa.framework in Frameworks */,
+				60E979191BF29970001BB7B5 /* Result.framework in Frameworks */,
+				60E9791A1BF29975001BB7B5 /* Quick.framework in Frameworks */,
+				60E9791B1BF29978001BB7B5 /* Nimble.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60E978B11BF28ACE001BB7B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60E978F71BF28C1F001BB7B5 /* theBeetModel.framework in Frameworks */,
+				60E979131BF29916001BB7B5 /* ReactiveCocoa.framework in Frameworks */,
+				60E979141BF2991C001BB7B5 /* Result.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60E978BB1BF28ACE001BB7B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60E978FB1BF28CE0001BB7B5 /* theBeetModel.framework in Frameworks */,
+				60E978BF1BF28ACE001BB7B5 /* theBeetViewModel.framework in Frameworks */,
+				60E9791C1BF2998A001BB7B5 /* ReactiveCocoa.framework in Frameworks */,
+				60E9791D1BF2998C001BB7B5 /* Result.framework in Frameworks */,
+				60E9791E1BF2998F001BB7B5 /* Quick.framework in Frameworks */,
+				60E9791F1BF29992001BB7B5 /* Nimble.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60E978D31BF28ADA001BB7B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60E978FA1BF28C2B001BB7B5 /* theBeetViewModel.framework in Frameworks */,
+				60E979151BF2991F001BB7B5 /* ReactiveCocoa.framework in Frameworks */,
+				60E979161BF29921001BB7B5 /* Result.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60E978DD1BF28ADB001BB7B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60E978FC1BF28CED001BB7B5 /* theBeetViewModel.framework in Frameworks */,
+				60E978E11BF28ADB001BB7B5 /* theBeetView.framework in Frameworks */,
+				60E979201BF299A5001BB7B5 /* ReactiveCocoa.framework in Frameworks */,
+				60E979211BF299A9001BB7B5 /* Result.framework in Frameworks */,
+				60E979221BF299B3001BB7B5 /* Quick.framework in Frameworks */,
+				60E979231BF299C9001BB7B5 /* Nimble.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,9 +426,15 @@
 		60E978611BF28A3E001BB7B5 = {
 			isa = PBXGroup;
 			children = (
+				60E978931BF28AAB001BB7B5 /* theBeetModel */,
+				60E978B61BF28ACE001BB7B5 /* theBeetViewModel */,
+				60E978D81BF28ADA001BB7B5 /* theBeetView */,
 				60E9786C1BF28A3E001BB7B5 /* theBeet */,
-				60E978811BF28A3E001BB7B5 /* theBeetTests */,
+				60E978F41BF28AFB001BB7B5 /* Tests */,
+				60E979071BF2984C001BB7B5 /* Frameworks */,
+				60E979551BF29D29001BB7B5 /* dSYMs */,
 				60E9786B1BF28A3E001BB7B5 /* Products */,
+				60E979051BF294CD001BB7B5 /* Cartfile */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +443,12 @@
 			children = (
 				60E9786A1BF28A3E001BB7B5 /* theBeet.app */,
 				60E9787E1BF28A3E001BB7B5 /* theBeetTests.xctest */,
+				60E978921BF28AAB001BB7B5 /* theBeetModel.framework */,
+				60E9789B1BF28AAB001BB7B5 /* theBeetModelTests.xctest */,
+				60E978B51BF28ACE001BB7B5 /* theBeetViewModel.framework */,
+				60E978BE1BF28ACE001BB7B5 /* theBeetViewModelTests.xctest */,
+				60E978D71BF28ADA001BB7B5 /* theBeetView.framework */,
+				60E978E01BF28ADB001BB7B5 /* theBeetViewTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,8 +457,6 @@
 			isa = PBXGroup;
 			children = (
 				60E9786D1BF28A3E001BB7B5 /* AppDelegate.swift */,
-				60E9786F1BF28A3E001BB7B5 /* ViewController.swift */,
-				60E978711BF28A3E001BB7B5 /* Main.storyboard */,
 				60E978741BF28A3E001BB7B5 /* Assets.xcassets */,
 				60E978761BF28A3E001BB7B5 /* LaunchScreen.storyboard */,
 				60E978791BF28A3E001BB7B5 /* Info.plist */,
@@ -90,13 +467,152 @@
 		60E978811BF28A3E001BB7B5 /* theBeetTests */ = {
 			isa = PBXGroup;
 			children = (
-				60E978821BF28A3E001BB7B5 /* theBeetTests.swift */,
 				60E978841BF28A3E001BB7B5 /* Info.plist */,
+				60736FF11BF2CBFF00EE6F97 /* AppDelegateSpec.swift */,
 			);
 			path = theBeetTests;
 			sourceTree = "<group>";
 		};
+		60E978931BF28AAB001BB7B5 /* theBeetModel */ = {
+			isa = PBXGroup;
+			children = (
+				60E978941BF28AAB001BB7B5 /* theBeetModel.h */,
+				60E978961BF28AAB001BB7B5 /* Info.plist */,
+				60E979561BF2A1F1001BB7B5 /* ImageEntity.swift */,
+				60736FCB1BF2A37200EE6F97 /* ResponseEntity.swift */,
+				60736FD31BF2A5D200EE6F97 /* Networking.swift */,
+				60736FD51BF2A5DD00EE6F97 /* Network.swift */,
+				60736FD71BF2A71C00EE6F97 /* NetworkError.swift */,
+				60736FDB1BF2A7C600EE6F97 /* Pixabay.swift */,
+				60736FDD1BF2A7EA00EE6F97 /* ImageSearching.swift */,
+				60736FDF1BF2A81800EE6F97 /* ImageSearch.swift */,
+			);
+			path = theBeetModel;
+			sourceTree = "<group>";
+		};
+		60E978A11BF28AAB001BB7B5 /* theBeetModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				60E978A21BF28AAB001BB7B5 /* theBeetModelTests.swift */,
+				60E978A41BF28AAB001BB7B5 /* Info.plist */,
+				60736FCD1BF2A46200EE6F97 /* Dummy.swift */,
+				60736FCF1BF2A49500EE6F97 /* ImageEntitySpec.swift */,
+				60736FD11BF2A57200EE6F97 /* ResponseEntitySpec.swift */,
+				60736FD91BF2A75700EE6F97 /* NetworkSpec.swift */,
+				60736FE11BF2A88D00EE6F97 /* ImageSearchSpec.swift */,
+			);
+			path = theBeetModelTests;
+			sourceTree = "<group>";
+		};
+		60E978B61BF28ACE001BB7B5 /* theBeetViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				60E978B71BF28ACE001BB7B5 /* theBeetViewModel.h */,
+				60E978B91BF28ACE001BB7B5 /* Info.plist */,
+				60736FE91BF2C99B00EE6F97 /* ImageSearchTableViewModeling.swift */,
+				60736FEB1BF2C9B500EE6F97 /* ImageSearchTableViewModel.swift */,
+				60736FED1BF2CA0300EE6F97 /* ImageSearchTableViewCellModeling.swift */,
+				60736FEF1BF2CA1300EE6F97 /* ImageSearchTableViewCellModel.swift */,
+			);
+			path = theBeetViewModel;
+			sourceTree = "<group>";
+		};
+		60E978C41BF28ACE001BB7B5 /* theBeetViewModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				60E978C71BF28ACE001BB7B5 /* Info.plist */,
+				60736FF31BF2CE9900EE6F97 /* DummyResponse.swift */,
+				60736FF51BF2CEC400EE6F97 /* ImageSearchTableViewModelSpec.swift */,
+			);
+			path = theBeetViewModelTests;
+			sourceTree = "<group>";
+		};
+		60E978D81BF28ADA001BB7B5 /* theBeetView */ = {
+			isa = PBXGroup;
+			children = (
+				60E978D91BF28ADA001BB7B5 /* theBeetView.h */,
+				60E978DB1BF28ADA001BB7B5 /* Info.plist */,
+				60736FE31BF2C75800EE6F97 /* ImageSearchTableViewController.swift */,
+				60736FE51BF2C7A300EE6F97 /* ImageSearchTableViewCell.swift */,
+				60736FE71BF2C7CC00EE6F97 /* main.storyboard */,
+			);
+			path = theBeetView;
+			sourceTree = "<group>";
+		};
+		60E978E61BF28ADB001BB7B5 /* theBeetViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				60E978E71BF28ADB001BB7B5 /* theBeetViewTests.swift */,
+				60E978E91BF28ADB001BB7B5 /* Info.plist */,
+			);
+			path = theBeetViewTests;
+			sourceTree = "<group>";
+		};
+		60E978F41BF28AFB001BB7B5 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				60E978A11BF28AAB001BB7B5 /* theBeetModelTests */,
+				60E978E61BF28ADB001BB7B5 /* theBeetViewTests */,
+				60E978C41BF28ACE001BB7B5 /* theBeetViewModelTests */,
+				60E978811BF28A3E001BB7B5 /* theBeetTests */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
+		60E979071BF2984C001BB7B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				60E979081BF29894001BB7B5 /* Alamofire.framework */,
+				60E979091BF29894001BB7B5 /* Himotoki.framework */,
+				60E9790A1BF29894001BB7B5 /* Nimble.framework */,
+				60E9790B1BF29894001BB7B5 /* Quick.framework */,
+				60E9790C1BF29894001BB7B5 /* ReactiveCocoa.framework */,
+				60E9790D1BF29894001BB7B5 /* Result.framework */,
+				60E9790E1BF29894001BB7B5 /* Swinject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		60E979551BF29D29001BB7B5 /* dSYMs */ = {
+			isa = PBXGroup;
+			children = (
+				60E9794B1BF29D11001BB7B5 /* Alamofire.framework.dSYM */,
+				60E9794C1BF29D11001BB7B5 /* Himotoki.framework.dSYM */,
+				60E9794D1BF29D11001BB7B5 /* ReactiveCocoa.framework.dSYM */,
+				60E9794E1BF29D11001BB7B5 /* Result.framework.dSYM */,
+				60E9794F1BF29D11001BB7B5 /* Swinject.framework.dSYM */,
+			);
+			name = dSYMs;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		60E9788F1BF28AAB001BB7B5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60E979021BF28EC4001BB7B5 /* theBeetModel.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60E978B21BF28ACE001BB7B5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60E979011BF28EBC001BB7B5 /* theBeetViewModel.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60E978D41BF28ADA001BB7B5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60E979001BF28EB1001BB7B5 /* theBeetView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		60E978691BF28A3E001BB7B5 /* theBeet */ = {
@@ -106,10 +622,16 @@
 				60E978661BF28A3E001BB7B5 /* Sources */,
 				60E978671BF28A3E001BB7B5 /* Frameworks */,
 				60E978681BF28A3E001BB7B5 /* Resources */,
+				60E978AC1BF28AAB001BB7B5 /* Embed Frameworks */,
+				60E979491BF29C0F001BB7B5 /* Run Script for Frameworks by Carthage */,
+				60E9794A1BF29C61001BB7B5 /* Copy dSYMs */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				60E978A61BF28AAB001BB7B5 /* PBXTargetDependency */,
+				60E978C91BF28ACE001BB7B5 /* PBXTargetDependency */,
+				60E978EB1BF28ADB001BB7B5 /* PBXTargetDependency */,
 			);
 			name = theBeet;
 			productName = theBeet;
@@ -123,6 +645,7 @@
 				60E9787A1BF28A3E001BB7B5 /* Sources */,
 				60E9787B1BF28A3E001BB7B5 /* Frameworks */,
 				60E9787C1BF28A3E001BB7B5 /* Resources */,
+				60E979451BF29B90001BB7B5 /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -134,12 +657,126 @@
 			productReference = 60E9787E1BF28A3E001BB7B5 /* theBeetTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		60E978911BF28AAB001BB7B5 /* theBeetModel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60E978A91BF28AAB001BB7B5 /* Build configuration list for PBXNativeTarget "theBeetModel" */;
+			buildPhases = (
+				60E9788D1BF28AAB001BB7B5 /* Sources */,
+				60E9788E1BF28AAB001BB7B5 /* Frameworks */,
+				60E9788F1BF28AAB001BB7B5 /* Headers */,
+				60E978901BF28AAB001BB7B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = theBeetModel;
+			productName = theBeetModel;
+			productReference = 60E978921BF28AAB001BB7B5 /* theBeetModel.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		60E9789A1BF28AAB001BB7B5 /* theBeetModelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60E978AD1BF28AAB001BB7B5 /* Build configuration list for PBXNativeTarget "theBeetModelTests" */;
+			buildPhases = (
+				60E978971BF28AAB001BB7B5 /* Sources */,
+				60E978981BF28AAB001BB7B5 /* Frameworks */,
+				60E978991BF28AAB001BB7B5 /* Resources */,
+				60E9792E1BF29AD1001BB7B5 /* Copy Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				60E9789E1BF28AAB001BB7B5 /* PBXTargetDependency */,
+			);
+			name = theBeetModelTests;
+			productName = theBeetModelTests;
+			productReference = 60E9789B1BF28AAB001BB7B5 /* theBeetModelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		60E978B41BF28ACE001BB7B5 /* theBeetViewModel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60E978CC1BF28ACE001BB7B5 /* Build configuration list for PBXNativeTarget "theBeetViewModel" */;
+			buildPhases = (
+				60E978B01BF28ACE001BB7B5 /* Sources */,
+				60E978B11BF28ACE001BB7B5 /* Frameworks */,
+				60E978B21BF28ACE001BB7B5 /* Headers */,
+				60E978B31BF28ACE001BB7B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				60E978F61BF28BE0001BB7B5 /* PBXTargetDependency */,
+			);
+			name = theBeetViewModel;
+			productName = theBeetViewModel;
+			productReference = 60E978B51BF28ACE001BB7B5 /* theBeetViewModel.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		60E978BD1BF28ACE001BB7B5 /* theBeetViewModelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60E978CF1BF28ACE001BB7B5 /* Build configuration list for PBXNativeTarget "theBeetViewModelTests" */;
+			buildPhases = (
+				60E978BA1BF28ACE001BB7B5 /* Sources */,
+				60E978BB1BF28ACE001BB7B5 /* Frameworks */,
+				60E978BC1BF28ACE001BB7B5 /* Resources */,
+				60E979361BF29B13001BB7B5 /* Copy Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				60E978C11BF28ACE001BB7B5 /* PBXTargetDependency */,
+			);
+			name = theBeetViewModelTests;
+			productName = theBeetViewModelTests;
+			productReference = 60E978BE1BF28ACE001BB7B5 /* theBeetViewModelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		60E978D61BF28ADA001BB7B5 /* theBeetView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60E978EE1BF28ADB001BB7B5 /* Build configuration list for PBXNativeTarget "theBeetView" */;
+			buildPhases = (
+				60E978D21BF28ADA001BB7B5 /* Sources */,
+				60E978D31BF28ADA001BB7B5 /* Frameworks */,
+				60E978D41BF28ADA001BB7B5 /* Headers */,
+				60E978D51BF28ADA001BB7B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				60E978F91BF28C26001BB7B5 /* PBXTargetDependency */,
+			);
+			name = theBeetView;
+			productName = theBeetView;
+			productReference = 60E978D71BF28ADA001BB7B5 /* theBeetView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		60E978DF1BF28ADB001BB7B5 /* theBeetViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60E978F11BF28ADB001BB7B5 /* Build configuration list for PBXNativeTarget "theBeetViewTests" */;
+			buildPhases = (
+				60E978DC1BF28ADB001BB7B5 /* Sources */,
+				60E978DD1BF28ADB001BB7B5 /* Frameworks */,
+				60E978DE1BF28ADB001BB7B5 /* Resources */,
+				60E9793E1BF29B51001BB7B5 /* Copy Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				60E978E31BF28ADB001BB7B5 /* PBXTargetDependency */,
+			);
+			name = theBeetViewTests;
+			productName = theBeetViewTests;
+			productReference = 60E978E01BF28ADB001BB7B5 /* theBeetViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		60E978621BF28A3E001BB7B5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = DaemonDevelopment;
 				TargetAttributes = {
@@ -149,6 +786,24 @@
 					60E9787D1BF28A3E001BB7B5 = {
 						CreatedOnToolsVersion = 7.0.1;
 						TestTargetID = 60E978691BF28A3E001BB7B5;
+					};
+					60E978911BF28AAB001BB7B5 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					60E9789A1BF28AAB001BB7B5 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					60E978B41BF28ACE001BB7B5 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					60E978BD1BF28ACE001BB7B5 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					60E978D61BF28ADA001BB7B5 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					60E978DF1BF28ADB001BB7B5 = {
+						CreatedOnToolsVersion = 7.0.1;
 					};
 				};
 			};
@@ -165,7 +820,13 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				60E978911BF28AAB001BB7B5 /* theBeetModel */,
+				60E978B41BF28ACE001BB7B5 /* theBeetViewModel */,
+				60E978D61BF28ADA001BB7B5 /* theBeetView */,
 				60E978691BF28A3E001BB7B5 /* theBeet */,
+				60E9789A1BF28AAB001BB7B5 /* theBeetModelTests */,
+				60E978BD1BF28ACE001BB7B5 /* theBeetViewModelTests */,
+				60E978DF1BF28ADB001BB7B5 /* theBeetViewTests */,
 				60E9787D1BF28A3E001BB7B5 /* theBeetTests */,
 			);
 		};
@@ -178,7 +839,6 @@
 			files = (
 				60E978781BF28A3E001BB7B5 /* LaunchScreen.storyboard in Resources */,
 				60E978751BF28A3E001BB7B5 /* Assets.xcassets in Resources */,
-				60E978731BF28A3E001BB7B5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,14 +849,79 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		60E978901BF28AAB001BB7B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60E979061BF294CD001BB7B5 /* Cartfile in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60E978991BF28AAB001BB7B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60E978B31BF28ACE001BB7B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60E978BC1BF28ACE001BB7B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60E978D51BF28ADA001BB7B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60736FE81BF2C7CC00EE6F97 /* main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60E978DE1BF28ADB001BB7B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		60E979491BF29C0F001BB7B5 /* Run Script for Frameworks by Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Himotoki.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ReactiveCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Swinject.framework",
+			);
+			name = "Run Script for Frameworks by Carthage";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		60E978661BF28A3E001BB7B5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60E978701BF28A3E001BB7B5 /* ViewController.swift in Sources */,
 				60E9786E1BF28A3E001BB7B5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -205,7 +930,72 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60E978831BF28A3E001BB7B5 /* theBeetTests.swift in Sources */,
+				60736FF21BF2CBFF00EE6F97 /* AppDelegateSpec.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60E9788D1BF28AAB001BB7B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60736FDE1BF2A7EA00EE6F97 /* ImageSearching.swift in Sources */,
+				60736FD41BF2A5D200EE6F97 /* Networking.swift in Sources */,
+				60E979571BF2A1F1001BB7B5 /* ImageEntity.swift in Sources */,
+				60736FDC1BF2A7C600EE6F97 /* Pixabay.swift in Sources */,
+				60736FD61BF2A5DD00EE6F97 /* Network.swift in Sources */,
+				60736FE01BF2A81800EE6F97 /* ImageSearch.swift in Sources */,
+				60736FCC1BF2A37200EE6F97 /* ResponseEntity.swift in Sources */,
+				60736FD81BF2A71C00EE6F97 /* NetworkError.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60E978971BF28AAB001BB7B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60736FCE1BF2A46200EE6F97 /* Dummy.swift in Sources */,
+				60E978A31BF28AAB001BB7B5 /* theBeetModelTests.swift in Sources */,
+				60736FD21BF2A57200EE6F97 /* ResponseEntitySpec.swift in Sources */,
+				60736FD01BF2A49500EE6F97 /* ImageEntitySpec.swift in Sources */,
+				60736FE21BF2A88D00EE6F97 /* ImageSearchSpec.swift in Sources */,
+				60736FDA1BF2A75700EE6F97 /* NetworkSpec.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60E978B01BF28ACE001BB7B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60736FEA1BF2C99B00EE6F97 /* ImageSearchTableViewModeling.swift in Sources */,
+				60736FEC1BF2C9B500EE6F97 /* ImageSearchTableViewModel.swift in Sources */,
+				60736FEE1BF2CA0300EE6F97 /* ImageSearchTableViewCellModeling.swift in Sources */,
+				60736FF01BF2CA1300EE6F97 /* ImageSearchTableViewCellModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60E978BA1BF28ACE001BB7B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60736FF61BF2CEC400EE6F97 /* ImageSearchTableViewModelSpec.swift in Sources */,
+				60736FF41BF2CE9900EE6F97 /* DummyResponse.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60E978D21BF28ADA001BB7B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60736FE41BF2C75800EE6F97 /* ImageSearchTableViewController.swift in Sources */,
+				60736FE61BF2C7A300EE6F97 /* ImageSearchTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60E978DC1BF28ADB001BB7B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60E978E81BF28ADB001BB7B5 /* theBeetViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,17 +1007,49 @@
 			target = 60E978691BF28A3E001BB7B5 /* theBeet */;
 			targetProxy = 60E9787F1BF28A3E001BB7B5 /* PBXContainerItemProxy */;
 		};
+		60E9789E1BF28AAB001BB7B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 60E978911BF28AAB001BB7B5 /* theBeetModel */;
+			targetProxy = 60E9789D1BF28AAB001BB7B5 /* PBXContainerItemProxy */;
+		};
+		60E978A61BF28AAB001BB7B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 60E978911BF28AAB001BB7B5 /* theBeetModel */;
+			targetProxy = 60E978A51BF28AAB001BB7B5 /* PBXContainerItemProxy */;
+		};
+		60E978C11BF28ACE001BB7B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 60E978B41BF28ACE001BB7B5 /* theBeetViewModel */;
+			targetProxy = 60E978C01BF28ACE001BB7B5 /* PBXContainerItemProxy */;
+		};
+		60E978C91BF28ACE001BB7B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 60E978B41BF28ACE001BB7B5 /* theBeetViewModel */;
+			targetProxy = 60E978C81BF28ACE001BB7B5 /* PBXContainerItemProxy */;
+		};
+		60E978E31BF28ADB001BB7B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 60E978D61BF28ADA001BB7B5 /* theBeetView */;
+			targetProxy = 60E978E21BF28ADB001BB7B5 /* PBXContainerItemProxy */;
+		};
+		60E978EB1BF28ADB001BB7B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 60E978D61BF28ADA001BB7B5 /* theBeetView */;
+			targetProxy = 60E978EA1BF28ADB001BB7B5 /* PBXContainerItemProxy */;
+		};
+		60E978F61BF28BE0001BB7B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 60E978911BF28AAB001BB7B5 /* theBeetModel */;
+			targetProxy = 60E978F51BF28BE0001BB7B5 /* PBXContainerItemProxy */;
+		};
+		60E978F91BF28C26001BB7B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 60E978B41BF28ACE001BB7B5 /* theBeetViewModel */;
+			targetProxy = 60E978F81BF28C26001BB7B5 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		60E978711BF28A3E001BB7B5 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				60E978721BF28A3E001BB7B5 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		60E978761BF28A3E001BB7B5 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -324,6 +1146,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = theBeet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bradycoye.theBeet.theBeet;
@@ -335,6 +1162,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = theBeet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bradycoye.theBeet.theBeet;
@@ -346,10 +1178,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = theBeetTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bradycoye.theBeet.theBeetTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/theBeet.app/theBeet";
 			};
 			name = Debug;
@@ -358,11 +1196,256 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = theBeetTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bradycoye.theBeet.theBeetTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/theBeet.app/theBeet";
+			};
+			name = Release;
+		};
+		60E978AA1BF28AAB001BB7B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = theBeetModel/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bradycoye.theBeet.theBeetModel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		60E978AB1BF28AAB001BB7B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = theBeetModel/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bradycoye.theBeet.theBeetModel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		60E978AE1BF28AAB001BB7B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = theBeetModelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bradycoye.theBeet.theBeetModelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		60E978AF1BF28AAB001BB7B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = theBeetModelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bradycoye.theBeet.theBeetModelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		60E978CD1BF28ACE001BB7B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = theBeetViewModel/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bradycoye.theBeet.theBeetViewModel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		60E978CE1BF28ACE001BB7B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = theBeetViewModel/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bradycoye.theBeet.theBeetViewModel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		60E978D01BF28ACE001BB7B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = theBeetViewModelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bradycoye.theBeet.theBeetViewModelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		60E978D11BF28ACE001BB7B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = theBeetViewModelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bradycoye.theBeet.theBeetViewModelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		60E978EF1BF28ADB001BB7B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = theBeetView/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bradycoye.theBeet.theBeetView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		60E978F01BF28ADB001BB7B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = theBeetView/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bradycoye.theBeet.theBeetView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		60E978F21BF28ADB001BB7B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = theBeetViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bradycoye.theBeet.theBeetViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		60E978F31BF28ADB001BB7B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = theBeetViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bradycoye.theBeet.theBeetViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -385,6 +1468,7 @@
 				60E978891BF28A3E001BB7B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		60E9788A1BF28A3E001BB7B5 /* Build configuration list for PBXNativeTarget "theBeetTests" */ = {
 			isa = XCConfigurationList;
@@ -393,6 +1477,61 @@
 				60E9788C1BF28A3E001BB7B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		60E978A91BF28AAB001BB7B5 /* Build configuration list for PBXNativeTarget "theBeetModel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60E978AA1BF28AAB001BB7B5 /* Debug */,
+				60E978AB1BF28AAB001BB7B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		60E978AD1BF28AAB001BB7B5 /* Build configuration list for PBXNativeTarget "theBeetModelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60E978AE1BF28AAB001BB7B5 /* Debug */,
+				60E978AF1BF28AAB001BB7B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		60E978CC1BF28ACE001BB7B5 /* Build configuration list for PBXNativeTarget "theBeetViewModel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60E978CD1BF28ACE001BB7B5 /* Debug */,
+				60E978CE1BF28ACE001BB7B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		60E978CF1BF28ACE001BB7B5 /* Build configuration list for PBXNativeTarget "theBeetViewModelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60E978D01BF28ACE001BB7B5 /* Debug */,
+				60E978D11BF28ACE001BB7B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		60E978EE1BF28ADB001BB7B5 /* Build configuration list for PBXNativeTarget "theBeetView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60E978EF1BF28ADB001BB7B5 /* Debug */,
+				60E978F01BF28ADB001BB7B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		60E978F11BF28ADB001BB7B5 /* Build configuration list for PBXNativeTarget "theBeetViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60E978F21BF28ADB001BB7B5 /* Debug */,
+				60E978F31BF28ADB001BB7B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
