@@ -1,5 +1,5 @@
-@testable import ExampleModel
-@testable import ExampleViewModel
+@testable import theBeetModel
+@testable import theBeetViewModel
 
 let dummyResponse: ResponseEntity = {
     let image0 = ImageEntity(

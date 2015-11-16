@@ -8,21 +8,49 @@
         <scene sceneID="mhz-z9-bWA">
             <objects>
                 <tableViewController storyboardIdentifier="ImageSearchTableViewController" id="Bo3-1T-iXV" userLabel="Pixabay Images" customClass="ImageSearchTableViewController" customModule="theBeetView" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="4De-bc-bnv">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" id="4De-bc-bnv">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="ImageSearchTableViewCell" selectionStyle="default" indentationWidth="10" id="os3-Lh-CO2" customClass="ImageSearchTableViewCell" customModule="theBeetView" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="92" width="600" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="os3-Lh-CO2" id="cAD-Xu-Oue">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="79.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dVs-hY-sLI">
+                                            <rect key="frame" x="0.0" y="0.0" width="110" height="74"/>
+                                            <animations/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vbp-of-ugd">
+                                            <rect key="frame" x="118" y="8" width="42" height="21"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nD5-Xz-4Eg">
+                                            <rect key="frame" x="118" y="50" width="42" height="21"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                     <animations/>
                                 </tableViewCellContentView>
                                 <animations/>
+                                <connections>
+                                    <outlet property="bottomLabel" destination="nD5-Xz-4Eg" id="kcW-Ul-9VX"/>
+                                    <outlet property="imageSizeLabel" destination="nD5-Xz-4Eg" id="jg1-Dd-dpe"/>
+                                    <outlet property="imageView" destination="dVs-hY-sLI" id="cYn-xO-y8Y"/>
+                                    <outlet property="previewImageView" destination="dVs-hY-sLI" id="xm6-cN-8KH"/>
+                                    <outlet property="tagLabel" destination="Vbp-of-ugd" id="Nap-p7-6hd"/>
+                                    <outlet property="topLabel" destination="Vbp-of-ugd" id="6Yy-2j-AIx"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
