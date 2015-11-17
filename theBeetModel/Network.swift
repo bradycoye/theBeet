@@ -12,16 +12,17 @@ public final class Network: Networking {
         -> SignalProducer<AnyObject, NetworkError>
     {
         return SignalProducer { observer, disposable in
+            let serializer = Alamofire.Request.JSONResponseSerializer()
             Alamofire.request(.GET, url, parameters: parameters)
-                .responseJSON { response in
+                .responseData { response  in
                     switch response.result {
                     case .Success(let value):
-                        sendNext(observer, value)
-                        sendCompleted(observer)
+                        observer.sendNext(value)
+                        observer.sendCompleted()
                     case .Failure(let error):
-                        sendError(observer, NetworkError(error: error))
+                        observer.sendFailed(NetworkError(error: error))
                     }
-                }
             }
+        }
     }
 }

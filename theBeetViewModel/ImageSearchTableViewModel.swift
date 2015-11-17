@@ -2,8 +2,8 @@ import ReactiveCocoa
 import theBeetModel
 
 public final class ImageSearchTableViewModel: ImageSearchTableViewModeling {
-    public var cellModels: PropertyOf<[ImageSearchTableViewCellModeling]> {
-        return PropertyOf(_cellModels)
+    public var cellModels: AnyProperty<[ImageSearchTableViewCellModeling]> {
+        return AnyProperty(_cellModels)
     }
     private let _cellModels = MutableProperty<[ImageSearchTableViewCellModeling]>([])
     private let imageSearch: ImageSearching
