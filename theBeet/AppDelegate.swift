@@ -17,13 +17,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         
         // View models
-        container.register(ImageSearchTableViewModeling.self) { r
-            in ImageSearchTableViewModel(imageSearch: r.resolve(ImageSearching.self)!)
+        container.register(ImageSearchTableViewModeling.self) { r in
+            ImageSearchTableViewModel(
+                imageSearch: r.resolve(ImageSearching.self)!,
+                network: r.resolve(Networking.self)!)
         }
         
         // Views
-        container.registerForStoryboard(ImageSearchTableViewController.self) {
-            r, c in
+        container.registerForStoryboard(ImageSearchTableViewController.self) { r, c in
             c.viewModel = r.resolve(ImageSearchTableViewModeling.self)!
         }
         

@@ -31,6 +31,8 @@
 		60736FF61BF2CEC400EE6F97 /* ImageSearchTableViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60736FF51BF2CEC400EE6F97 /* ImageSearchTableViewModelSpec.swift */; };
 		60736FF81BF2D0D200EE6F97 /* ImageSearchTableViewCellSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60736FF71BF2D0D200EE6F97 /* ImageSearchTableViewCellSpec.swift */; };
 		60BD550E1BFBD64B0014B70F /* ImageSearchTableViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E7A15B1BFBD5C400FFA5EA /* ImageSearchTableViewControllerSpec.swift */; };
+		60BD55101BFC272F0014B70F /* RACUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BD550F1BFC272F0014B70F /* RACUtil.swift */; };
+		60BD55121BFC3BF60014B70F /* RACUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BD55111BFC3BF60014B70F /* RACUtil.swift */; };
 		60E9786E1BF28A3E001BB7B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E9786D1BF28A3E001BB7B5 /* AppDelegate.swift */; };
 		60E978751BF28A3E001BB7B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60E978741BF28A3E001BB7B5 /* Assets.xcassets */; };
 		60E978781BF28A3E001BB7B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60E978761BF28A3E001BB7B5 /* LaunchScreen.storyboard */; };
@@ -289,6 +291,8 @@
 		60736FF31BF2CE9900EE6F97 /* DummyResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DummyResponse.swift; sourceTree = "<group>"; };
 		60736FF51BF2CEC400EE6F97 /* ImageSearchTableViewModelSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageSearchTableViewModelSpec.swift; sourceTree = "<group>"; };
 		60736FF71BF2D0D200EE6F97 /* ImageSearchTableViewCellSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageSearchTableViewCellSpec.swift; sourceTree = "<group>"; };
+		60BD550F1BFC272F0014B70F /* RACUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RACUtil.swift; sourceTree = "<group>"; };
+		60BD55111BFC3BF60014B70F /* RACUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RACUtil.swift; sourceTree = "<group>"; };
 		60E7A15B1BFBD5C400FFA5EA /* ImageSearchTableViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageSearchTableViewControllerSpec.swift; sourceTree = "<group>"; };
 		60E9786A1BF28A3E001BB7B5 /* theBeet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = theBeet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60E9786D1BF28A3E001BB7B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -517,6 +521,7 @@
 				60736FEB1BF2C9B500EE6F97 /* ImageSearchTableViewModel.swift */,
 				60736FED1BF2CA0300EE6F97 /* ImageSearchTableViewCellModeling.swift */,
 				60736FEF1BF2CA1300EE6F97 /* ImageSearchTableViewCellModel.swift */,
+				60BD550F1BFC272F0014B70F /* RACUtil.swift */,
 			);
 			path = theBeetViewModel;
 			sourceTree = "<group>";
@@ -540,6 +545,7 @@
 				60736FE31BF2C75800EE6F97 /* ImageSearchTableViewController.swift */,
 				60736FE51BF2C7A300EE6F97 /* ImageSearchTableViewCell.swift */,
 				60736FE71BF2C7CC00EE6F97 /* main.storyboard */,
+				60BD55111BFC3BF60014B70F /* RACUtil.swift */,
 			);
 			path = theBeetView;
 			sourceTree = "<group>";
@@ -974,6 +980,7 @@
 			files = (
 				60736FEA1BF2C99B00EE6F97 /* ImageSearchTableViewModeling.swift in Sources */,
 				60736FEC1BF2C9B500EE6F97 /* ImageSearchTableViewModel.swift in Sources */,
+				60BD55101BFC272F0014B70F /* RACUtil.swift in Sources */,
 				60736FEE1BF2CA0300EE6F97 /* ImageSearchTableViewCellModeling.swift in Sources */,
 				60736FF01BF2CA1300EE6F97 /* ImageSearchTableViewCellModel.swift in Sources */,
 			);
@@ -995,6 +1002,7 @@
 			files = (
 				60736FE41BF2C75800EE6F97 /* ImageSearchTableViewController.swift in Sources */,
 				60736FE61BF2C7A300EE6F97 /* ImageSearchTableViewCell.swift in Sources */,
+				60BD55121BFC3BF60014B70F /* RACUtil.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

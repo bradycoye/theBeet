@@ -24,8 +24,31 @@ public final class Network: Networking {
                     }
                 }
                 .responseJSON { response in
-                   // debugPrint(response)
-                }
+                    // debugPrint(response)
+            }
+        }
+    }
+    
+    public func requestImage(url: String) -> SignalProducer<UIImage, NetworkError> {
+        return SignalProducer { observer, disposable in
+            let serializer = Alamofire.Request.dataResponseSerializer()
+            Alamofire.request(.GET, url)
+                .responseData { response  in
+                    switch response.result {
+                    case .Success(let data):
+                        guard let image = UIImage(data: data) else {
+                            observer.sendFailed(.IncorrectDataReturned)
+                            print("this shit failed")
+                            return
+                        }
+                        print("this shit should be working")
+                        observer.sendNext(image)
+                        observer.sendCompleted()
+                    case .Failure(let error):
+                        observer.sendFailed(NetworkError(error: error))
+                        
+                    }
+            }
         }
     }
 }
