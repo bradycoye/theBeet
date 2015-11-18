@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="aX7-OD-iUa">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="aX7-OD-iUa">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Pixabay Images-->
@@ -14,42 +15,73 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="ImageSearchTableViewCell" selectionStyle="default" indentationWidth="10" id="os3-Lh-CO2" customClass="ImageSearchTableViewCell" customModule="theBeetView" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="ImageSearchTableViewCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="ImageSearchTableViewCell" id="os3-Lh-CO2" customClass="ImageSearchTableViewCell" customModule="theBeetView" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="92" width="600" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="os3-Lh-CO2" id="cAD-Xu-Oue">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="79.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dVs-hY-sLI">
-                                            <rect key="frame" x="0.0" y="0.0" width="110" height="74"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vbp-of-ugd">
+                                            <rect key="frame" x="128" y="8" width="344" height="21"/>
                                             <animations/>
-                                        </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vbp-of-ugd">
-                                            <rect key="frame" x="118" y="8" width="42" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="4w3-kx-xge"/>
+                                                <constraint firstAttribute="width" constant="344" id="JSW-Td-TUW"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nD5-Xz-4Eg">
+                                            <rect key="frame" x="128" y="50" width="344" height="20.5"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nD5-Xz-4Eg">
-                                            <rect key="frame" x="118" y="50" width="42" height="21"/>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Yzr-kg-hba">
+                                            <rect key="frame" x="10" y="0.0" width="110" height="74"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dVs-hY-sLI">
+                                                    <rect key="frame" x="0.0" y="0.0" width="110" height="74"/>
+                                                    <animations/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="110" id="ZGJ-Ie-99T"/>
+                                                        <constraint firstAttribute="height" constant="74" id="dC1-dI-rdW"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
                                             <animations/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
+                                            <constraints>
+                                                <constraint firstItem="dVs-hY-sLI" firstAttribute="leading" secondItem="Yzr-kg-hba" secondAttribute="leadingMargin" id="3zB-X2-pvj"/>
+                                                <constraint firstItem="dVs-hY-sLI" firstAttribute="leading" secondItem="Yzr-kg-hba" secondAttribute="leading" id="8KC-Ob-YLs"/>
+                                                <constraint firstItem="dVs-hY-sLI" firstAttribute="leading" secondItem="Yzr-kg-hba" secondAttribute="leading" id="MYS-We-HNq"/>
+                                                <constraint firstItem="dVs-hY-sLI" firstAttribute="leading" secondItem="Yzr-kg-hba" secondAttribute="leading" id="Paj-3P-o0l"/>
+                                                <constraint firstItem="dVs-hY-sLI" firstAttribute="leading" secondItem="Yzr-kg-hba" secondAttribute="leading" id="PpB-Hz-fuD"/>
+                                                <constraint firstAttribute="trailing" secondItem="dVs-hY-sLI" secondAttribute="trailing" id="dcN-CB-K0J"/>
+                                                <constraint firstItem="dVs-hY-sLI" firstAttribute="trailing" secondItem="Yzr-kg-hba" secondAttribute="trailingMargin" id="fGc-wB-yhH"/>
+                                                <constraint firstAttribute="trailing" secondItem="dVs-hY-sLI" secondAttribute="trailing" id="k93-rs-boP"/>
+                                                <constraint firstItem="dVs-hY-sLI" firstAttribute="centerX" secondItem="Yzr-kg-hba" secondAttribute="centerX" id="u3X-u8-Thh"/>
+                                            </constraints>
+                                        </stackView>
                                     </subviews>
                                     <animations/>
+                                    <constraints>
+                                        <constraint firstItem="Vbp-of-ugd" firstAttribute="top" secondItem="cAD-Xu-Oue" secondAttribute="topMargin" id="5Py-Uf-3Iw"/>
+                                        <constraint firstItem="Vbp-of-ugd" firstAttribute="leading" secondItem="Yzr-kg-hba" secondAttribute="trailing" constant="8" symbolic="YES" id="K02-WQ-JAn"/>
+                                        <constraint firstItem="nD5-Xz-4Eg" firstAttribute="top" secondItem="Vbp-of-ugd" secondAttribute="bottom" constant="21" id="PbG-nt-FGl"/>
+                                        <constraint firstItem="nD5-Xz-4Eg" firstAttribute="centerX" secondItem="cAD-Xu-Oue" secondAttribute="centerX" id="VmJ-nH-HXN"/>
+                                        <constraint firstItem="Vbp-of-ugd" firstAttribute="leading" secondItem="nD5-Xz-4Eg" secondAttribute="leading" id="gbZ-CW-trn"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="dVs-hY-sLI" secondAttribute="bottom" constant="-2.5" id="tyz-cv-Sen"/>
+                                        <constraint firstItem="Vbp-of-ugd" firstAttribute="centerX" secondItem="cAD-Xu-Oue" secondAttribute="centerX" id="xjd-6M-Xaw"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <animations/>
                                 <connections>
-                                    <outlet property="bottomLabel" destination="nD5-Xz-4Eg" id="kcW-Ul-9VX"/>
-                                    <outlet property="imageSizeLabel" destination="nD5-Xz-4Eg" id="jg1-Dd-dpe"/>
-                                    <outlet property="imageView" destination="dVs-hY-sLI" id="cYn-xO-y8Y"/>
-                                    <outlet property="previewImageView" destination="dVs-hY-sLI" id="xm6-cN-8KH"/>
-                                    <outlet property="tagLabel" destination="Vbp-of-ugd" id="Nap-p7-6hd"/>
-                                    <outlet property="topLabel" destination="Vbp-of-ugd" id="6Yy-2j-AIx"/>
+                                    <outlet property="imageSizeLabel" destination="nD5-Xz-4Eg" id="bGj-B7-WLv"/>
+                                    <outlet property="previewImageView" destination="dVs-hY-sLI" id="29q-9I-pZ2"/>
+                                    <outlet property="tagLabel" destination="Vbp-of-ugd" id="O0Z-lG-Wcz"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -58,7 +90,7 @@
                             <outlet property="delegate" destination="Bo3-1T-iXV" id="FDI-QI-puX"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="kQq-pQ-sJc"/>
+                    <navigationItem key="navigationItem" title="Pixabay Images" id="kQq-pQ-sJc"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qyI-Gf-ZZ7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

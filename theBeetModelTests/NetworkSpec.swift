@@ -27,7 +27,7 @@ class NetworkSpec: QuickSpec {
                 var error: NetworkError? = nil
                 let url = "https://not.existing.server.comm/get"
                 network.requestJSON(url, parameters: ["a": "b", "x": "y"])
-                    .on(error: { error = $0 })
+                    .on(failed: { error = $0 })
                     .start()
                 
                 expect(error)

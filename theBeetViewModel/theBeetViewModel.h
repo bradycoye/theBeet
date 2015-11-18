@@ -15,5 +15,3 @@ FOUNDATION_EXPORT double theBeetViewModelVersionNumber;
 FOUNDATION_EXPORT const unsigned char theBeetViewModelVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <theBeetViewModel/PublicHeader.h>
-
-

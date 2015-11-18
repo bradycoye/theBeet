@@ -19,8 +19,8 @@ class ImageSearchSpec: QuickSpec {
             ]
             
             return SignalProducer { observer, disposable in
-                sendNext(observer, json)
-                sendCompleted(observer)
+                observer.sendNext(json)
+                observer.sendCompleted()
                 }.observeOn(QueueScheduler())
         }
     }
@@ -32,8 +32,8 @@ class ImageSearchSpec: QuickSpec {
             let json = [String: AnyObject]()
             
             return SignalProducer { observer, disposable in
-                sendNext(observer, json)
-                sendCompleted(observer)
+                observer.sendNext(json)
+                observer.sendCompleted()
                 }.observeOn(QueueScheduler())
         }
     }
@@ -43,7 +43,7 @@ class ImageSearchSpec: QuickSpec {
             -> SignalProducer<AnyObject, NetworkError>
         {
             return SignalProducer { observer, disposable in
-                sendError(observer, .NotConnectedToInternet)
+                observer.sendFailed(.NotConnectedToInternet)
                 }.observeOn(QueueScheduler())
         }
     }
@@ -67,7 +67,7 @@ class ImageSearchSpec: QuickSpec {
             var error: NetworkError? = nil
             let search = ImageSearch(network: BadStubNetwork())
             search.searchImages()
-                .on(error: { error = $0 })
+                .on(failed: { error = $0 })
                 .start()
             
             expect(error).toEventually(equal(NetworkError.IncorrectDataReturned))
@@ -76,7 +76,7 @@ class ImageSearchSpec: QuickSpec {
             var error: NetworkError? = nil
             let search = ImageSearch(network: ErrorStubNetwork())
             search.searchImages()
-                .on(error: { error = $0 })
+                .on(failed: { error = $0 })
                 .start()
             
             expect(error).toEventually(equal(NetworkError.NotConnectedToInternet))
