@@ -3,6 +3,9 @@ import Swinject
 import theBeetModel
 import theBeetViewModel
 import theBeetView
+import Fabric
+import TwitterKit
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -46,6 +49,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             bundle: bundle,
             container: container)
         window.rootViewController = storyboard.instantiateInitialViewController()
+        
+        
+        // Set up Fabric
+        //Twitter.sharedInstance().startWithConsumerKey("PGemTIyUT6ipzi6a5fSwdcnwM", consumerSecret: "DHeuJNCvrG8flcn1q9nnvBxjD43qrCzWIg7IuYgcqH95nQ8RN8")
+        //Fabric.with([Twitter.sharedInstance()])
+        Fabric.with([Twitter.self])
+
         
         return true
     }

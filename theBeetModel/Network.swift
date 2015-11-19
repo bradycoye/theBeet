@@ -1,5 +1,6 @@
 import ReactiveCocoa
 import Alamofire
+import TwitterKit
 
 public final class Network: Networking {
     private let queue = dispatch_queue_create(
@@ -29,26 +30,54 @@ public final class Network: Networking {
         }
     }
     
-    public func requestImage(url: String) -> SignalProducer<UIImage, NetworkError> {
+    
+    
+    public func requestTrends(url: String, parameters: [String : AnyObject]?) -> SignalProducer<AnyObject, NetworkError>
+    {
         return SignalProducer { observer, disposable in
-            let serializer = Alamofire.Request.dataResponseSerializer()
-            Alamofire.request(.GET, url)
-                .responseData { response  in
-                    switch response.result {
-                    case .Success(let data):
-                        guard let image = UIImage(data: data) else {
-                            observer.sendFailed(.IncorrectDataReturned)
-                            print("this shit failed")
-                            return
-                        }
-                        print("this shit should be working")
-                        observer.sendNext(image)
+            if let userID = Twitter.sharedInstance().sessionStore.session()!.userID {
+                let client = TWTRAPIClient(userID: userID)
+                var error: NSError?
+                // make requests with client
+                
+                let request = Twitter.sharedInstance().APIClient.URLRequestWithMethod("GET", URL: url, parameters: parameters, error: &error)
+                client.sendTwitterRequest(request) { (response, data, connectionError) -> Void in
+                    if (connectionError == nil) {
+                        var jsonError : NSError?
+                        let json : AnyObject? = try! NSJSONSerialization.JSONObjectWithData(data!, options:NSJSONReadingOptions.MutableContainers )
+                        observer.sendNext(json!)
                         observer.sendCompleted()
-                    case .Failure(let error):
-                        observer.sendFailed(NetworkError(error: error))
-                        
                     }
+                    else {
+                        print("Error: \(connectionError)")
+                        observer.sendFailed(NetworkError(error: error!))
+                    }
+                }
+                
             }
         }
     }
+    
+        public func requestImage(url: String) -> SignalProducer<UIImage, NetworkError> {
+            return SignalProducer { observer, disposable in
+                let serializer = Alamofire.Request.dataResponseSerializer()
+                Alamofire.request(.GET, url)
+                    .responseData { response  in
+                        switch response.result {
+                        case .Success(let data):
+                            guard let image = UIImage(data: data) else {
+                                observer.sendFailed(.IncorrectDataReturned)
+                                print("this shit failed")
+                                return
+                            }
+                            print("this shit should be working")
+                            observer.sendNext(image)
+                            observer.sendCompleted()
+                        case .Failure(let error):
+                            observer.sendFailed(NetworkError(error: error))
+                            
+                        }
+                }
+            }
+        }
 }

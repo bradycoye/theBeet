@@ -28,4 +28,19 @@ public final class ImageSearchTableViewModel: ImageSearchTableViewModeling {
             })
             .start()
     }
+    
+    public func startTrendSearch() {
+        imageSearch.searchTwitter()
+            .map { response in
+                response.images.map {
+                    ImageSearchTableViewCellModel(image: $0, network: self.network)
+                        as ImageSearchTableViewCellModeling
+                }
+            }
+            .observeOn(UIScheduler())
+            .on(next: { cellModels in
+                self._cellModels.value = cellModels
+            })
+            .start()
+    }
 }

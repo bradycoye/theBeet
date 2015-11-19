@@ -5,4 +5,5 @@ public protocol Networking {
         -> SignalProducer<AnyObject, NetworkError>
     
     func requestImage(url: String) -> SignalProducer<UIImage, NetworkError>
+    func requestTrends(url: String, parameters: [String : AnyObject]?) -> SignalProducer<AnyObject, NetworkError>
 }
