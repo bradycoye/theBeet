@@ -12,6 +12,9 @@ public final class ImageSearchTableViewCellModel
     private let previewURL: String
     private var previewImage: UIImage?
     
+    public let name: String
+    public let query: String
+    
     internal init(image: ImageEntity, network: Networking) {
         id = image.id
         pageImageSizeText = "\(image.pageImageWidth) x \(image.pageImageHeight)"
@@ -22,6 +25,17 @@ public final class ImageSearchTableViewCellModel
         
         super.init()
     }
+
+    internal init(trend: TrendEntity, network: Networking) {
+        name = trend.name
+        query = trend.query
+        
+        self.network = network
+        
+        
+        super.init()
+    }
+
     
     public func getPreviewImage() -> SignalProducer<UIImage?, NoError> {
         if let previewImage = self.previewImage {

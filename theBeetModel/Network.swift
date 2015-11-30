@@ -36,8 +36,10 @@ public final class Network: Networking {
     {
         return SignalProducer { observer, disposable in
             if let userID = Twitter.sharedInstance().sessionStore.session()!.userID {
-                let client = TWTRAPIClient(userID: userID)
+                let client = TWTRAPIClient()
                 var error: NSError?
+                var clientError: NSError?
+                
                 // make requests with client
                 
                 let request = Twitter.sharedInstance().APIClient.URLRequestWithMethod("GET", URL: url, parameters: parameters, error: &error)
@@ -45,6 +47,7 @@ public final class Network: Networking {
                     if (connectionError == nil) {
                         var jsonError : NSError?
                         let json : AnyObject? = try! NSJSONSerialization.JSONObjectWithData(data!, options:NSJSONReadingOptions.MutableContainers )
+                        print(json)
                         observer.sendNext(json!)
                         observer.sendCompleted()
                     }
@@ -53,10 +56,10 @@ public final class Network: Networking {
                         observer.sendFailed(NetworkError(error: error!))
                     }
                 }
-                
             }
         }
     }
+
     
         public func requestImage(url: String) -> SignalProducer<UIImage, NetworkError> {
             return SignalProducer { observer, disposable in

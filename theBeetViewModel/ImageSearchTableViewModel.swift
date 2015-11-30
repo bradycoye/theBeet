@@ -20,6 +20,7 @@ public final class ImageSearchTableViewModel: ImageSearchTableViewModeling {
                 response.images.map {
                     ImageSearchTableViewCellModel(image: $0, network: self.network)
                         as ImageSearchTableViewCellModeling
+            
                 }
             }
             .observeOn(UIScheduler())
@@ -32,8 +33,8 @@ public final class ImageSearchTableViewModel: ImageSearchTableViewModeling {
     public func startTrendSearch() {
         imageSearch.searchTwitter()
             .map { response in
-                response.images.map {
-                    ImageSearchTableViewCellModel(image: $0, network: self.network)
+                response.trends.map {
+                    ImageSearchTableViewCellModel(trend: $0, network: self.network)
                         as ImageSearchTableViewCellModeling
                 }
             }
@@ -43,4 +44,5 @@ public final class ImageSearchTableViewModel: ImageSearchTableViewModeling {
             })
             .start()
     }
+
 }

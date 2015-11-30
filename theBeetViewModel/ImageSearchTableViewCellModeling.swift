@@ -5,5 +5,8 @@ public protocol ImageSearchTableViewCellModeling {
     var pageImageSizeText: String { get }
     var tagText: String { get }
     
+    var name: String { get }
+    var query: String { get }
+    
     func getPreviewImage() -> SignalProducer<UIImage?, NoError>
 }

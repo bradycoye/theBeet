@@ -5,3 +5,4 @@ github "Swinject/Swinject" "0.5"
 
 github "Quick/Quick" "v0.8.0"
 github "Quick/Nimble" "v3.0.0"
+github "appsquickly/Typhoon"

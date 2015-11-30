@@ -1,5 +1,5 @@
 internal struct TwitterAPI {
-    internal static let apiURL = "https://api.twitter.com/1.1/trends/closest.json"
+    internal static let apiURL = "https://api.twitter.com/1.1/trends/place.json?id=1"
     
     internal static var requestParameters: [String: AnyObject] {
         return [

@@ -3,8 +3,10 @@ import Swinject
 import theBeetModel
 import theBeetViewModel
 import theBeetView
-import Fabric
 import TwitterKit
+import Fabric
+
+
 
 
 @UIApplicationMain
@@ -17,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         container.register(Networking.self) { _ in Network() }
         container.register(ImageSearching.self) { r in
             ImageSearch(network: r.resolve(Networking.self)!)
+        
         }
         
         // View models
@@ -31,6 +34,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             c.viewModel = r.resolve(ImageSearchTableViewModeling.self)!
         }
         
+        
+        container.registerForStoryboard(ConnectAccountsViewController.self) { r, c in
+            
+        }
+        
+
+        
+        
         return container
     }
     
@@ -44,6 +55,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = window
         
         let bundle = NSBundle(forClass: ImageSearchTableViewController.self)
+        //let bundle = NSBundle(forClass: ConnectAccountsViewController.self)
         let storyboard = SwinjectStoryboard.create(
             name: "main",
             bundle: bundle,
@@ -52,8 +64,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         // Set up Fabric
-        //Twitter.sharedInstance().startWithConsumerKey("PGemTIyUT6ipzi6a5fSwdcnwM", consumerSecret: "DHeuJNCvrG8flcn1q9nnvBxjD43qrCzWIg7IuYgcqH95nQ8RN8")
-        //Fabric.with([Twitter.sharedInstance()])
+        Twitter.sharedInstance().startWithConsumerKey("PGemTIyUT6ipzi6a5fSwdcnwM", consumerSecret: "DHeuJNCvrG8flcn1q9nnvBxjD43qrCzWIg7IuYgcqH95nQ8RN8")
+        Fabric.with([Twitter.sharedInstance()])
         Fabric.with([Twitter.self])
 
         

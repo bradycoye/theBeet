@@ -1,8 +1,7 @@
 import ReactiveCocoa
 import Result
 import Himotoki
-import TwitterKit
-import CoreLocation
+//import TwitterKit
 
 public final class ImageSearch: ImageSearching {
     private let network: Networking
@@ -29,7 +28,7 @@ public final class ImageSearch: ImageSearching {
         let url = TwitterAPI.apiURL
         let parameters = TwitterAPI.requestParameters
         
-        return network.requestJSON(url, parameters: parameters)
+        return network.requestTrends(url, parameters: parameters)
             .attemptMap { json in
                 if let response = (try? decode(json)) as ResponseEntity? {
                     return Result(value: response)
@@ -41,5 +40,6 @@ public final class ImageSearch: ImageSearching {
         
         
     }
+
 }
 
