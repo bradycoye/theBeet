@@ -1,9 +1,23 @@
-//
-//  TwitterSearchTableViewCellModel.swift
-//  theBeet
-//
-//  Created by Brady Coye on 11/30/15.
-//  Copyright © 2015 DaemonDevelopment. All rights reserved.
-//
+import ReactiveCocoa
+import theBeetModel
 
-import Foundation
+public final class TwitterSearchTableViewCellModel
+    : NSObject, TwitterSearchTableViewCellModeling
+{
+    
+    public let name: String
+    public let query: String
+    private let network: Networking
+    
+    internal init(trends: TrendEntity, network: Networking) {
+        name = trends.name
+        query = trends.query
+        
+        self.network = network
+        
+        
+        super.init()
+    }
+    
+    
+}

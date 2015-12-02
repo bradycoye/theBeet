@@ -7,8 +7,8 @@ public struct TwitterResponseEntity {
 // MARK: Decodable
 extension TwitterResponseEntity: Decodable {
     public static func decode(e: Extractor) throws -> TwitterResponseEntity {
-        return try build(TwitterResponseEntity.init)(
-            e <|| "trends"
+        return try TwitterResponseEntity(
+            trends: e <|| "trends"
         )
     }
 }

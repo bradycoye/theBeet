@@ -1,7 +1,7 @@
 import ReactiveCocoa
 import Result
 import Himotoki
-//import TwitterKit
+import TwitterKit
 
 public final class ImageSearch: ImageSearching {
     private let network: Networking
@@ -16,6 +16,7 @@ public final class ImageSearch: ImageSearching {
         return network.requestJSON(url, parameters: parameters)
             .attemptMap { json in
                 if let response = (try? decode(json)) as ResponseEntity? {
+                    
                     return Result(value: response)
                 }
                 else {
@@ -24,22 +25,27 @@ public final class ImageSearch: ImageSearching {
         }
     }
     
-    public func searchTwittter() -> SignalProducer<ResponseEntity, NetworkError> {
+    public func searchTwitter() -> SignalProducer<TwitterResponseEntity, NetworkError> {
         let url = TwitterAPI.apiURL
         let parameters = TwitterAPI.requestParameters
         
         return network.requestTrends(url, parameters: parameters)
             .attemptMap { json in
-                if let response = (try? decode(json)) as ResponseEntity? {
+                if let response = (try? decode(json)) as TwitterResponseEntity? {
+                    print(response)
+                    print("I executed")
                     return Result(value: response)
                 }
                 else {
+                    print("I Executed fail")
                     return Result(error: .IncorrectDataReturned)
                 }
         }
         
         
     }
+    
+    
 
 }
 

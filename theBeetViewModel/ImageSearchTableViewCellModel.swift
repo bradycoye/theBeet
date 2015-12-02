@@ -4,31 +4,39 @@ import theBeetModel
 public final class ImageSearchTableViewCellModel
     : NSObject, ImageSearchTableViewCellModeling
 {
+    /*
     public let id: UInt64
     public let pageImageSizeText: String
     public let tagText: String
-    
-    private let network: Networking
-    private let previewURL: String
-    private var previewImage: UIImage?
-    
-    public let name: String
+    */
+    public let name : String
     public let query: String
     
+    private let network: Networking
+    
+    /*
+    private let previewURL: String
+    private var previewImage: UIImage?
+    */
+    
+    /*
     internal init(image: ImageEntity, network: Networking) {
         id = image.id
         pageImageSizeText = "\(image.pageImageWidth) x \(image.pageImageHeight)"
         tagText = image.tags.joinWithSeparator(", ")
         
+        
         self.network = network
         previewURL = image.previewURL
         
+        
         super.init()
     }
-
-    internal init(trend: TrendEntity, network: Networking) {
-        name = trend.name
-        query = trend.query
+    */
+    
+    internal init(trends: TrendEntity, network: Networking) {
+        name = trends.name
+        query = trends.query
         
         self.network = network
         
@@ -36,7 +44,7 @@ public final class ImageSearchTableViewCellModel
         super.init()
     }
 
-    
+    /*
     public func getPreviewImage() -> SignalProducer<UIImage?, NoError> {
         if let previewImage = self.previewImage {
             return SignalProducer(value: previewImage).observeOn(UIScheduler())
@@ -53,4 +61,5 @@ public final class ImageSearchTableViewCellModel
                 .observeOn(UIScheduler())
         }
     }
+    */
 }

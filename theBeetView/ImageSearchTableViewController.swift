@@ -20,7 +20,7 @@ public final class ImageSearchTableViewController: UITableViewController {
         
         if !autoSearchStarted {
             autoSearchStarted = true
-            viewModel?.startSearch()
+            viewModel?.startTrendSearch()
         }
     }
     

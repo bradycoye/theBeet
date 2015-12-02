@@ -1,7 +1,7 @@
 import ReactiveCocoa
 
 public protocol ImageSearchTableViewModeling {
-    var cellModels: AnyProperty<[ImageSearchTableViewCellModeling]> { get }
-    func startSearch()
+    var cellModels: AnyProperty<[TwitterSearchTableViewCellModeling]> { get }
+    //func startSearch()
     func startTrendSearch()
 }

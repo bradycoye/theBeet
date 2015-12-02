@@ -1,6 +1,7 @@
 import ReactiveCocoa
 import Alamofire
 import TwitterKit
+import Fabric
 
 public final class Network: Networking {
     private let queue = dispatch_queue_create(
@@ -35,8 +36,13 @@ public final class Network: Networking {
     public func requestTrends(url: String, parameters: [String : AnyObject]?) -> SignalProducer<AnyObject, NetworkError>
     {
         return SignalProducer { observer, disposable in
+            // Set up Fabric
+            Twitter.sharedInstance().startWithConsumerKey("PGemTIyUT6ipzi6a5fSwdcnwM", consumerSecret: "DHeuJNCvrG8flcn1q9nnvBxjD43qrCzWIg7IuYgcqH95nQ8RN8")
+            Fabric.with([Twitter.sharedInstance()])
+            Fabric.with([Twitter.self])
+            
             if let userID = Twitter.sharedInstance().sessionStore.session()!.userID {
-                let client = TWTRAPIClient()
+                let client = TWTRAPIClient(userID: "230892739")
                 var error: NSError?
                 var clientError: NSError?
                 
@@ -53,7 +59,7 @@ public final class Network: Networking {
                     }
                     else {
                         print("Error: \(connectionError)")
-                        observer.sendFailed(NetworkError(error: error!))
+                        observer.sendFailed(NetworkError(error: connectionError!))
                     }
                 }
             }

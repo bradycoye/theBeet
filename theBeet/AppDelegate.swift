@@ -49,6 +49,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         application: UIApplication,
         didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool
     {
+      
+        // Set up Fabric
+        Twitter.sharedInstance().startWithConsumerKey("PGemTIyUT6ipzi6a5fSwdcnwM", consumerSecret: "DHeuJNCvrG8flcn1q9nnvBxjD43qrCzWIg7IuYgcqH95nQ8RN8")
+        Fabric.with([Twitter.sharedInstance()])
+        Fabric.with([Twitter.self])
+
+        
+        
+        
         let window = UIWindow(frame: UIScreen.mainScreen().bounds)
         window.backgroundColor = UIColor.whiteColor()
         window.makeKeyAndVisible()
@@ -63,11 +72,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window.rootViewController = storyboard.instantiateInitialViewController()
         
         
-        // Set up Fabric
-        Twitter.sharedInstance().startWithConsumerKey("PGemTIyUT6ipzi6a5fSwdcnwM", consumerSecret: "DHeuJNCvrG8flcn1q9nnvBxjD43qrCzWIg7IuYgcqH95nQ8RN8")
-        Fabric.with([Twitter.sharedInstance()])
-        Fabric.with([Twitter.self])
-
+        
         
         return true
     }
